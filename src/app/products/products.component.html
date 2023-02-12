@@ -1,6 +1,11 @@
-<div class="products-title">Products</div>
+<div class="products-title" *ngIf="Query_is_enable">Products</div>
 <div class="badge-list" *ngIf="Query_is_enable"><app-badge-search name="{{q}}" *ngFor="let q of Query_list"/></div>
-<section class="products-all">
+<section class="products-all"  *ngIf="Query_is_enable">
     <div class="products-worning" *ngIf="!Products_is_enable">Products not found!</div>
     <app-product price="{{a.PRICE}}" src="{{a.IMG}}" name="{{a.NAME}}" *ngFor="let a of Products_list"/>
 </section>
+<div *ngIf="!Query_is_enable">
+    <app-category category="fone" title="Fone" bg="#FFF"></app-category>
+    <app-category category="mouse" title="Mouse" bg="#FFFAEB"></app-category>
+    <app-category category="teclado" title="Teclado" bg="#FEFEFE"></app-category>
+</div>

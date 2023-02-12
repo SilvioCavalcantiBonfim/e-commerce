@@ -113,10 +113,7 @@ section {
 
 body {
 	line-height: 1;
-	background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 248, 1) 50%, rgba(255, 255, 255, 1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 248, 1) 50%, rgba(255, 255, 255, 1) 100%);
-	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 248, 1) 50%, rgba(255, 255, 255, 1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+	background: rgba(248,248,248,1);
 }
 button{
 	background-color: transparent;

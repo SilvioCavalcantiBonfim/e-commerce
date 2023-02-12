@@ -2,11 +2,12 @@ export interface Product{
     ID: String,
     NAME: String,
     IMG: String,
-    PRICE: Number
+    PRICE: Number,
+    DISCOUNT?: Number
 }
 
 export const products = [
-    { ID: '1',  NAME: "Mouse gamer",              PRICE: 439.00,   IMG: "/assets/mouse-3.jpg" },
+    { ID: '1',  NAME: "Mouse gamer",              PRICE: 439.00,   IMG: "/assets/mouse-3.jpg", DISCOUNT: 0.2 },
     { ID: '2',  NAME: "Monitor muito bom",        PRICE: 1200.50,  IMG: "/assets/monitor-1.jpg" },
     { ID: '3',  NAME: "Teclado excelente",        PRICE: 749.99,   IMG: "/assets/teclado-1.jpg" },
     { ID: '4',  NAME: "Fone para quem joga FPS",  PRICE: 599.99,   IMG: "/assets/fone-de-ouvido-2.jpg" },

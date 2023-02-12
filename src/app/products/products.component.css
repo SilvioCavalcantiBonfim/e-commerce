@@ -1,9 +1,12 @@
 .products-all{
     display: flex;
     flex-wrap: wrap;
+    overflow: scroll;
     gap: 24px;
+    /* margin-left: 20px; */
     justify-content: center;
-    margin-bottom: 24px;
+    /* margin-left: 24px;
+    margin-bottom: 24px; */
 }
 .badge-list{
     display: flex;
