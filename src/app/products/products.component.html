@@ -1,0 +1,6 @@
+<div class="products-title">Products</div>
+<div class="badge-list" *ngIf="Query_is_enable"><app-badge-search name="{{q}}" *ngFor="let q of Query_list"/></div>
+<section class="products-all">
+    <div class="products-worning" *ngIf="!Products_is_enable">Products not found!</div>
+    <app-product price="{{a.PRICE}}" src="{{a.IMG}}" name="{{a.NAME}}" *ngFor="let a of Products_list"/>
+</section>

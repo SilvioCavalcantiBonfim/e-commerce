@@ -1,0 +1,33 @@
+.products-all{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.badge-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    gap: 10px;
+}
+.products-title{
+    font-size: 24px !important;
+    line-height: 32px;
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: inherit;
+    margin-bottom: 24px;
+    margin-left: 25px;
+}
+.products-worning{
+    font-size: 24px !important;
+    line-height: 32px;
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: inherit;
+    margin-bottom: 24px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
