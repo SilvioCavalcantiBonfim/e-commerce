@@ -1,0 +1,51 @@
+<section class="product-container">
+    <a class="back" (click)="onBack()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+                d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z" />
+        </svg>
+    </a>
+    <div class="product-container-img">
+        <img [src]="product.IMG" class="product-img">
+    </div>
+    <div class="product-order-container">
+        <h1>{{product.NAME}}</h1>
+        <div class="price-amount-container">
+            <div class="amount">
+                <button [class]="(amount > 1)? 'enabled':'disabled'" (click)="decrement()">
+                    <svg width="16" height="3" viewBox="0 0 16 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1.3335" x2="16" y2="1.3335" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </button>
+                <span>{{amount}}</span>
+                <button class="enabled" (click)="increment()">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 7V0H7V7H0V9H7V16H9V9H16V7H9Z" fill="currentColor" />
+                    </svg>
+                </button>
+            </div>
+            <div class="price">{{product.PRICE}}</div>
+        </div>
+        <hr>
+        <div class="description-container">
+            <h2>Descrição:</h2>
+            <div class="description">
+                Red Quinoa, Lime, Honey, Blueberries, Strawberries, Mango, Fresh mint.
+            </div>
+        </div>
+        <hr>
+        <div class="actions">
+            <button class="like">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.8569 3.57182L12.2762 4.21954L12.6961 3.57218C14.6116 0.618891 17.2997 0.0220015 19.4843 0.861185C21.7006 1.71255 23.5 4.07958 23.5 7.27652C23.5 8.4035 22.9031 9.76214 21.8988 11.2299C20.9048 12.6826 19.5597 14.1738 18.1684 15.5523C16.7793 16.9287 15.3562 18.1807 14.2135 19.1564C13.803 19.5069 13.4304 19.8202 13.1076 20.0917C12.9806 20.1986 12.8613 20.2989 12.7504 20.3925C12.5715 20.5435 12.41 20.6805 12.2738 20.7991C12.1312 20.6783 11.9617 20.5392 11.7741 20.3867C11.6142 20.2566 11.4385 20.1147 11.2482 19.9609C10.9496 19.7197 10.6148 19.4492 10.2479 19.1495C9.05316 18.1733 7.56075 16.9208 6.10211 15.5439C4.64114 14.1649 3.22713 12.6732 2.18182 11.2202C1.12468 9.75078 0.5 8.39574 0.5 7.27652C0.5 4.07302 2.42082 1.69839 4.78556 0.845351C7.12696 0.000735578 9.9525 0.630172 11.8569 3.57182Z"
+                        stroke="#FFA451" />
+                </svg>
+            </button>
+            <button class="basket">
+                <span>Adicionar ao carrinho</span>
+            </button>
+        </div>
+    </div>
+</section>

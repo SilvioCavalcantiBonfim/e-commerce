@@ -1,4 +1,3 @@
-<div class="products-title">{{title}}</div>
 <section class="products-all">
-    <app-product bg="{{bg}}" price="{{a.PRICE}}" src="{{a.IMG}}" name="{{a.NAME}}" *ngFor="let a of Products_list"/>
+    <app-product [product]="a" [bg]="bg" *ngFor="let a of products_list"/>
 </section>

@@ -113,7 +113,7 @@ section {
 
 body {
 	line-height: 1;
-	background: rgba(248,248,248,1);
+	background: #FFFFFF;
 }
 button{
 	background-color: transparent;
@@ -148,6 +148,8 @@ table {
 }
 
 :root{
+	--primary: #FFA451;
+	--primary-container: #FFF2E7;
 	--font-color: #27214D;
 	--search-color: #F3F4F9;
 }
@@ -185,6 +187,20 @@ table {
 	src: url('./assets/Brandon_bld.otf');
 	font-weight: bold;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: brandon-grotesque;
+	src: url('./assets/Brandon_med.otf');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: brandon-grotesque;
+	src: url('./assets/Brandon_med_it.otf');
+	font-weight: 500;
+	font-style: italic;
 }
 
 @font-face {

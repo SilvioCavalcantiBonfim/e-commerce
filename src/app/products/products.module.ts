@@ -6,6 +6,7 @@ import { ProductsComponent } from './products.component';
 import { ProductComponent } from './product/product.component';
 import { BadgeSearchComponent } from './badge-search/badge-search.component';
 import { CategoryComponent } from './category/category.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CategoryComponent } from './category/category.component';
     ProductsComponent,
     ProductComponent,
     BadgeSearchComponent,
-    CategoryComponent
+    CategoryComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,

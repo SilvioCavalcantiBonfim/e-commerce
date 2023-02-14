@@ -2,13 +2,9 @@
     <section class="group-1">
         <div class="group-1-bt-1">
             <button>
-                <svg width="22" height="11" viewBox="0 0 22 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0 1.375C0 1.01033 0.144866 0.660591 0.402728 0.402728C0.660591 0.144866 1.01033 0 1.375 0H20.625C20.9897 0 21.3394 0.144866 21.5973 0.402728C21.8551 0.660591 22 1.01033 22 1.375C22 1.73967 21.8551 2.08941 21.5973 2.34727C21.3394 2.60513 20.9897 2.75 20.625 2.75H1.375C1.01033 2.75 0.660591 2.60513 0.402728 2.34727C0.144866 2.08941 0 1.73967 0 1.375Z"
-                        fill="#070648" />
-                    <path
-                        d="M1.375 8.25C1.01033 8.25 0.660591 8.39487 0.402728 8.65273C0.144866 8.91059 0 9.26033 0 9.625C0 9.98967 0.144866 10.3394 0.402728 10.5973C0.660591 10.8551 1.01033 11 1.375 11H12.375C12.7397 11 13.0894 10.8551 13.3473 10.5973C13.6051 10.3394 13.75 9.98967 13.75 9.625C13.75 9.26033 13.6051 8.91059 13.3473 8.65273C13.0894 8.39487 12.7397 8.25 12.375 8.25H1.375Z"
-                        fill="#070648" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"/>
+                    <path d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"/>
                 </svg>
             </button>
         </div>
@@ -24,7 +20,7 @@
         </button>
     </section>
     <section class="group-2">
-        Hello {{username}}, <span>What hardware do you want today?</span>
+        Olá {{username}}, <span>Qual oferta você quer hoje?</span>
     </section>
 
     <section class="group-3">
@@ -44,7 +40,7 @@
                     </clipPath>
                 </defs>
             </svg>
-            <input placeholder="Search for your hardware" type="text" (input)="onSearch($event)">
+            <input placeholder="Buscar um produto para você" type="text" (input)="onSearch($event)">
         </div>
     </section>
 </header>

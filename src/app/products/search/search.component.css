@@ -10,6 +10,11 @@
 }
 .group-1-bt-1 button{
     margin-bottom: 13px;
+    background-color: #F3F4F9;
+    color: var(--font-color);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
 }
 .group-1-bt-1{
     display: flex;

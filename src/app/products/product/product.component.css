@@ -4,6 +4,8 @@
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     box-sizing: border-box;
     padding: 16px;
+    background-color: #fff;
+    position: relative;
 }
 
 .product-1{
@@ -40,17 +42,36 @@
 }
 
 .product-3{
-    color: #F08626;
+    color: var(--primary);
     margin-top: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.product-value-promo{
+    font-size: 14px;
+    color: green !important;
+}
 .product-value{
     font-size: 14px;
 }
+.discount{
+    font-size: 12px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 1px;
+    background-color: green;
+    color: #fff;
+}
 .product-add-basket{
-    background-color: #FFF2E7;
+    color: var(--primary);
+    background-color: var(--primary-container);
     display: flex;
     align-items: center;
     justify-content: center;

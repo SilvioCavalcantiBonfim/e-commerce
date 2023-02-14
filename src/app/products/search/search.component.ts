@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { SearchService } from './search.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
-export class HeaderComponent {
+export class SearchComponent {
   username: string = 'user';
   search: string = '';
 
