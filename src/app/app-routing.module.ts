@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductComponent } from './product/product.component';
 
-const routes: Routes = [{ path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule) },
-{path: '', redirectTo: 'products', pathMatch: 'full'},
-{path: 'product/:id', component: ProductComponent}];
+const routes: Routes = [
+  { path: 'home', loadChildren: () => import('./home/products.module').then(m => m.ProductsModule) },
+  { path: 'basket', loadChildren: () => import('./basket/basket.module').then(m => m.BasketModule) },
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'order', loadChildren: () => import('./order/order.module').then(m => m.OrderModule) }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

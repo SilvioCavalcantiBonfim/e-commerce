@@ -1,0 +1,95 @@
+.group-1{
+    display: flex;
+    justify-content: space-between;
+    margin: 26px 24px 0px 24px;
+    box-sizing: border-box;
+}
+.group-1 button{
+    background-color: transparent;
+    border: none;
+}
+.group-1-bt-1 button{
+    margin-bottom: 13px;
+    background-color: #F3F4F9;
+    color: var(--font-color);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.group-1-bt-1{
+    display: flex;
+    align-items: end;
+}
+.group-1-bt-title{
+    font-size: 10px;
+    line-height: 15px;
+    color: var(--font-color);
+}
+
+.group-2{
+    flex: 1;
+    margin: 11px 96px 0px 24px;
+    font-size: 20px;
+    color: var(--font-color);
+}
+.group-2 span{
+    font-weight: bold;
+    font-size: inherit;
+    color: inherit;
+}
+
+.group-3{
+    margin: 24px 24px 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group-3-search{
+    background-color: #F3F4F9;
+    height: 56px;
+    flex: 1;
+    margin-right: 16px;
+    /* width: 288px; */
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    /* padding-left: 24px; */
+}
+.group-3-icon{
+    margin: 0px 16px 0px 24px;
+}
+.group-3-search input{
+    flex: 1;
+    margin-right: 16px;
+    background-color: transparent;
+    color: #9696ab;
+    line-height: 21px;
+    font-size: 14px;
+    border: none;
+    text-overflow: ellipsis;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: lighter;
+}
+.group-3-search input:focus{
+    border: none;
+    outline: none;
+}
+.group-1-badge-basket{
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: blod;
+    font-size: 10px;
+    line-height: 10px;
+    top: -2px;
+    right: 7px;
+}
+.group-1-bt-2{
+    position: relative;
+}
