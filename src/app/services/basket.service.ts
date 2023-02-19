@@ -16,7 +16,7 @@ export class BasketService {
     return this._basket.length;
   }
   public add2Basket(_product: Product): void{
-    const _aux = this._basket.filter(e => e.Product.ID === _product.ID);
+    const _aux = this._basket.filter(e => e.Product.id === _product.id);
     if(_aux.length === 0){
       const newItem = new BasketItem(1, _product);
       this._basket.push(newItem);
@@ -26,7 +26,7 @@ export class BasketService {
   }
   
   public remove2Basket(_product: Product): void{
-    this._basket = this._basket.filter(e => e.Product.ID !== _product.ID);
+    this._basket = this._basket.filter(e => e.Product.id !== _product.id);
   }
 
   public Clear(): void{
@@ -36,9 +36,9 @@ export class BasketService {
   public get TotalBasket(): number{
     var _v: number = 0;
     this._basket.forEach(e => {
-      var current = e.Product.PRICE*e.Amount;
-      if(e.Product.DISCOUNT !== undefined)
-        current *= (1 - e.Product.DISCOUNT);
+      var current = e.Product.price*e.Amount;
+      if(e.Product.descount !== undefined)
+        current *= (1 - e.Product.descount);
       _v += current;
     });
     return _v;

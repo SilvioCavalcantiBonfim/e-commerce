@@ -15,17 +15,17 @@ export class OrderComponent {
   }
 
   get discountEnable(): boolean{
-    return ("DISCOUNT" in this.order.Product)
+    return this.order.Product.descount !== 0;
   }
 
   get Economy(): number{
-    return this.order.Amount*this.order.Product.PRICE - this.price;
+    return this.order.Amount*this.order.Product.price - this.price;
   }
 
   get price(): number{
-    var value: number = this.order.Product.PRICE;
+    var value: number = this.order.Product.price;
     if(this.discountEnable)
-      value *= (1-this.order.Product.DISCOUNT);
+      value *= (1-this.order.Product.descount);
     return value*this.order.Amount;
   }
 

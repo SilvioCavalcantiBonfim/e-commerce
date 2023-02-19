@@ -11,16 +11,15 @@ import { FavoriteService } from 'src/app/services/favorite.service';
 export class ProductComponent implements OnInit{ 
   @Input() bg: string = "";
   @Input() product: Product | any;
-  // isFavority: boolean = false;
 
   constructor(private favorites: FavoriteService, private basket: BasketService){}
 
   get isFavority() {
-    return this.favorites.isFavorite(this.product.ID);
+    return this.favorites.isFavorite(this.product.id);
   }
 
   get promo_enable() {
-    return "DISCOUNT" in this.product;
+    return this.product.descount !== 0;
   }
 
   onAddBasket(){
@@ -28,7 +27,7 @@ export class ProductComponent implements OnInit{
   }
 
   onAddFavority(): void{
-    !this.favorites.isFavorite(this.product.ID)?this.favorites.Add2Favorites(this.product.ID):this.favorites.Remove2Favorites(this.product.ID)
+    !this.favorites.isFavorite(this.product.id)?this.favorites.Add2Favorites(this.product.id):this.favorites.Remove2Favorites(this.product.id)
   }
 
   ngOnInit(): void {

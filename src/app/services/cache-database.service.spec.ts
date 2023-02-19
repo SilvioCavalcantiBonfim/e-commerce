@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { FavoriteService } from './favorite.service';
+import { CacheDatabaseService } from './cache-database.service';
 
-describe('FavoriteService', () => {
-  let service: FavoriteService;
+describe('CacheDatabaseService', () => {
+  let service: CacheDatabaseService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(FavoriteService);
+    service = TestBed.inject(CacheDatabaseService);
   });
 
   it('should be created', () => {

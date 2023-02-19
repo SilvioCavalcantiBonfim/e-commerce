@@ -1,8 +1,8 @@
 <div class="order-container">
     <div class="order-container-1">
-        <img [src]="order.Product.IMG">
+        <img [src]="order.Product.img">
         <div class="order-options">
-            <h2>{{order.Product.NAME}}</h2>
+            <h2>{{order.Product.name}}</h2>
             <div class="amount-control">
                 <button [ngClass]="(order.Amount === 1)? 'decrement delete': 'decrement enable'" (click)="onDecrement()">
                     <svg *ngIf="order.Amount > 1" width="16" height="3" viewBox="0 0 16 3" fill="none" xmlns="http://www.w3.org/2000/svg">

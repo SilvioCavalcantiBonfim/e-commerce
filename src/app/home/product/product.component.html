@@ -1,6 +1,6 @@
 <article class="product" [style.background-color]="bg" >
     <div class="product-1">
-        <img class="product-img" [src]="product?.IMG" alt="">
+        <img class="product-img" [src]="product?.img" alt="">
         <button class="product-like" (click)="onAddFavority()">
             <svg width="16"  height="15" [ngClass]="(!isFavority)? 'notFavorite':'favorite'" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -11,16 +11,16 @@
         </button>
     </div>
     <div class="product-2">
-        <span>{{product?.NAME}}</span>
+        <span>{{product?.name}}</span>
     </div>
     <div class="product-3">
-        <div *ngIf="promo_enable" class="product-value-promo">{{(product?.PRICE * (1-product?.DISCOUNT)) | currency: 'R$ '}}</div>
-        <div *ngIf="!promo_enable" class="product-value">{{product?.PRICE | currency: 'R$ '}}</div>
+        <div *ngIf="promo_enable" class="product-value-promo">{{(product?.price * (1-product?.descount)) | currency: 'R$ '}}</div>
+        <div *ngIf="!promo_enable" class="product-value">{{product?.price | currency: 'R$ '}}</div>
         <button class="product-add-basket" (click)="onAddBasket()">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.75 5.25V0H5.25V5.25H0V6.75H5.25V12H6.75V6.75H12V5.25H6.75Z" fill="#FFA451" />
             </svg>
         </button>
     </div>
-    <div *ngIf="promo_enable" class="discount"><span>-{{product.DISCOUNT | percent}}</span></div>
+    <div *ngIf="promo_enable" class="discount"><span>-{{product.descount | percent}}</span></div>
 </article>

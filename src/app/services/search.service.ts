@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Product, products } from '../entities/Product.entites';
+import { CacheDatabaseService } from './cache-database.service';
 
 @Injectable({
   providedIn: 'root'
@@ -7,12 +9,14 @@ import { Product, products } from '../entities/Product.entites';
 export class SearchService {
   query: string[] = [];
   
-  products_list: Product[] = products;
+  products_list: Product[] = [];
 
-  constructor() { }
+  constructor() {
+      
+   }
   
   setQueryList(e: Event): void{
     this.query = (e.target as HTMLInputElement).value.split(" ").filter(e => e !== '');
-    this.products_list = (this.query.length !== 0)? products.filter(e => this.query.map(ee => e.NAME.toLowerCase().includes(ee)).indexOf(true) !== -1): products;
+    this.products_list = (this.query.length !== 0)? this.products_list.filter(e => this.query.map(ee => e.name.toLowerCase().includes(ee)).indexOf(true) !== -1): this.products_list;
   }
 }

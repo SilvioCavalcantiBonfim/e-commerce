@@ -1,9 +1,9 @@
 export interface Product{
-    ID: String,
-    NAME: String,
-    IMG: String,
-    PRICE: number,
-    DISCOUNT?: number
+    id: number,
+    name: String,
+    img: String,
+    price: number,
+    descount: number
 }
 
 
