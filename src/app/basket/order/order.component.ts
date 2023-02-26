@@ -15,7 +15,7 @@ export class OrderComponent {
   }
 
   get discountEnable(): boolean{
-    return this.order.Product.descount !== 0;
+    return this.order.Product.discount !== 0;
   }
 
   get Economy(): number{
@@ -23,9 +23,7 @@ export class OrderComponent {
   }
 
   get price(): number{
-    var value: number = this.order.Product.price;
-    if(this.discountEnable)
-      value *= (1-this.order.Product.descount);
+    var value: number = this.order.Product.price*(1-this.order.Product.discount);
     return value*this.order.Amount;
   }
 

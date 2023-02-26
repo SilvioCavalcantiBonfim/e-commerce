@@ -37,8 +37,8 @@ export class BasketService {
     var _v: number = 0;
     this._basket.forEach(e => {
       var current = e.Product.price*e.Amount;
-      if(e.Product.descount !== undefined)
-        current *= (1 - e.Product.descount);
+      if(e.Product.discount !== undefined)
+        current *= (1 - e.Product.discount);
       _v += current;
     });
     return _v;

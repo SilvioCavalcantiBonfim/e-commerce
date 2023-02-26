@@ -1,8 +1,11 @@
-<div *ngIf="!errorMode">
+<div class="home">
     <app-search />
+    <div class="badge-list" *ngIf="Query_is_enable">
+        <app-badge-search [name]="q" *ngFor="let q of Query_list"/>
+    </div>
     <div class="products-title" *ngIf="Query_is_enable">Produtos</div>
     <section class="products-all" *ngIf="Query_is_enable">
-        <!-- <div class="products-worning" *ngIf="!Products_is_enable">Nenhum produto encontrado!</div> -->
+        <div class="products-worning" *ngIf="!Products_is_enable">Nenhum produto encontrado!</div>
         <app-product [product]="p" *ngFor="let p of Products_list" />
     </section>
     <!-- sem busca -->

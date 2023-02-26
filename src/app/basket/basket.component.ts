@@ -13,6 +13,9 @@ export class BasketComponent {
   get orderList(){
     return this.basket.BasketList;
   }
+  get orderExist(){
+    return this.basket.BasketList.length > 0;
+  }
   get Total(): number{
     return this.basket.TotalBasket;
   }

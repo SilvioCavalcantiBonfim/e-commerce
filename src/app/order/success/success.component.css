@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     height: 100vh;
 }
 .msg svg{
