@@ -1,5 +1,5 @@
 {
-    "project": "Asteroids",
-    "frameworks": ["createreactapp"],
-    "description": "Sistema em javascript baseado no jogo asteroids."
+    "project": "E-Commerce",
+    "frameworks": ["angular"],
+    "description": "Projeto desenvolvido durante o treinamento no programa start by capgemini. "
 }
