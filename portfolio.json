@@ -1,5 +1,15 @@
 {
     "project": "E-Commerce",
-    "frameworks": ["angular"],
+  "technologies": [
+        {
+            "name": "Angular",
+            "iconUrl": "https://cdn.simpleicons.org/angular"
+        }
+    ],
+    "deploy": [{
+        "url": "https://silviocavalcantibonfim.github.io/e-commerce/",
+        "urlIcon":"https://cdn.simpleicons.org/githubpages"
+}],
+    "thumbnailUrl": "https://raw.githubusercontent.com/SilvioCavalcantiBonfim/e-commerce/mobile-version/thumb.png",
     "description": "Projeto desenvolvido durante o treinamento no programa start by capgemini. "
 }
